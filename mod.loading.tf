@@ -11,14 +11,14 @@ locals {
   data-documentdb-subnet-groups    = try(jsondecode(file(var.file-documentdb-subnet-groups)), [])
   data-documentdb-parameter-groups = try(jsondecode(file(var.file-documentdb-parameter-groups)), [])
 
-  data-neptune                  = try(jsondecode(file(var.file-neptune-dbs)), [])
+  data-neptune-dbs              = try(jsondecode(file(var.file-neptune-dbs)), [])
   data-neptune-subnet-groups    = try(jsondecode(file(var.file-neptune-subnet-groups)), [])
   data-neptune-parameter-groups = try(jsondecode(file(var.file-neptune-parameter-groups)), [])
 
-  data-elasticache    = try(jsondecode(file(var.file-elasticache-dbs)), [])
-  data-memorydb-redis = try(jsondecode(file(var.file-memorydb-redis-dbs)), [])
-  data-quantum-ledger = try(jsondecode(file(var.file-quantum-ledger-dbs)), [])
-  data-keyspaces      = try(jsondecode(file(var.file-keyspaces-dbs)), [])
+  data-elasticache-dbs    = try(jsondecode(file(var.file-elasticache-dbs)), [])
+  data-memorydb-redis-dbs = try(jsondecode(file(var.file-memorydb-redis-dbs)), [])
+  data-quantum-ledger-dbs = try(jsondecode(file(var.file-quantum-ledger-dbs)), [])
+  data-keyspaces-dbs      = try(jsondecode(file(var.file-keyspaces-dbs)), [])
 }
 
 /*Data decoding...*/
