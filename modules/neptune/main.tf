@@ -3,7 +3,7 @@ resource "aws_neptune_subnet_group" "this_subnet_group" {
   for_each    = var.core-db-subnet-groups
   name        = each.value.name
   description = each.value.description
-  subnet_ids  = each.value.subnets
+  subnet_ids  = [for s in each.value.subnets : var.core-vpc-subnets[s].id]
   tags = {
     Name = each.key
   }

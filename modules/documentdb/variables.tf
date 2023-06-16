@@ -1,3 +1,4 @@
+variable "core-vpc-subnets" {}
 /*
 variable "core-dbs" {
   type = map(object({

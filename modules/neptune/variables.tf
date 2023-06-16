@@ -1,3 +1,5 @@
+variable "core-vpc-subnets" {}
+
 variable "core-db-subnet-groups" {
   type = map(object({
     region      = optional(string)
