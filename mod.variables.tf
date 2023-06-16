@@ -1,4 +1,6 @@
 /*Initialization...*/
+variable "data-vpcs" {}
+variable "data-vpc-subnets" {}
 variable "file-rds-aurora-mysql-dbs" { default = "" }
 variable "file-rds-aurora-postgresql-dbs" { default = "" }
 variable "file-rds-mysql-dbs" { default = "" }
