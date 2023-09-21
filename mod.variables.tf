@@ -22,3 +22,5 @@ variable "file-elasticache-dbs" { default = "" }
 variable "file-memorydb-redis-dbs" { default = "" }
 variable "file-quantum-ledger-dbs" { default = "" }
 variable "file-keyspaces-dbs" { default = "" }
+
+variable "file-timestream-dbs" { default = "" }
